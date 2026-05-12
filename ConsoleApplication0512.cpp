@@ -21,8 +21,11 @@ int main()
             // 奇数回だけ反転（2回に1回）
             std::cout << greetriv << "\n";
         }
+        else {
 
-        std::cout << greet << "\n";
+            //  偶数回は通常
+            std::cout << greet << "\n";
+        }
 
     }
 }
