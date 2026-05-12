@@ -9,17 +9,17 @@ int main()
     {
 
         //　string型の変数を作り、そこに"Hello World!"を入れる。
-        std::string s = "Hello World!";
+        std::string greet = "Hello World!";
 
         //  2回に1回（奇数回のみ逆転）
         //　iが今の回数なので、それを2で割ったあまりが1の時が奇数回。
         if (i % 2 == 1)
         {
             // 奇数回だけ反転（2回に1回）
-            std::reverse(s.begin(), s.end());
+            std::reverse(greet.begin(), greet.end());
         }
 
-        std::cout << s << "\n";
+        std::cout << greet << "\n";
 
     }
 }
