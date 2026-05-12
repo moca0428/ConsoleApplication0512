@@ -5,29 +5,28 @@
 
 int main()
 {
-    for (int i = 0; i < 100; i++)
-    {
+	auto forward = std::string("Hallo World!");
+	auto reverse = forward;
 
-        //　string型の変数を作り、そこに"Hello World!"を入れる。
-        std::string greet = "Hello World!";
+	std::reverse(reverse.begin(), reverse.end());
 
-        //　反転バージョンも用意しておく
-        std::string greetriv(greet.rbegin(), greet.rend());
+	
+	
+	
+	auto i = 10;
 
-        //  2回に1回（奇数回のみ逆転）
-        //　iが今の回数なので、それを2で割ったあまりが1の時が奇数回。
-        if (i % 2 == 1)
-        {
-            // 奇数回だけ反転（2回に1回）
-            std::cout << greetriv << "\n";
-        }
-        else {
+	while (i--)
+	{
+		if (i & 1)
+		{
+			std::cout << reverse << std::endl;
+		}
+		else
+		{
+			std::cout << forward << std::endl;
+		}
+	}
 
-            //  偶数回は通常
-            std::cout << greet << "\n";
-        }
-
-    }
 }
 
 // プログラムの実行: Ctrl + F5 または [デバッグ] > [デバッグなしで開始] メニュー
