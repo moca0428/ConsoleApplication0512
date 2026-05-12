@@ -5,18 +5,22 @@
 
 int main()
 {
+	//　通常時の文字列用の変数（"Hallo World!"を入れる）
 	auto forward = std::string("Hallo World!");
+	//　反転時の文字列用の変数（ひとまず"Hallo World!"を入れる）
 	auto reverse = forward;
 
+	//　反転時の変数の中身を反転させている
 	std::reverse(reverse.begin(), reverse.end());
 
-	
 	
 	
 	auto i = 10;
 
 	while (i--)
 	{
+		//　bit演算　はやい！
+		//　二進数で下一桁が0か1かを見ている？
 		if (i & 1)
 		{
 			std::cout << reverse << std::endl;
